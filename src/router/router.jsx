@@ -11,6 +11,7 @@ import PrivateRoute from "../Provider/PrivateRouter";
 import MyAddFood from "../Pages/MyAddFood/MyAddFood";
 import axios from "axios";
 import FoodDetails from "../Pages/Deatils/FoodDeatils";
+import AddToCart from "../Pages/AddToCart/AddToCart";
 
 
 export const router = createBrowserRouter([
@@ -31,6 +32,9 @@ export const router = createBrowserRouter([
       loader:  ({params})=>axios(`http://localhost:3000/food/${params.id}`),
       element:<FoodDetails></FoodDetails>
     },
+    {path:'addtocart',element:<PrivateRoute>
+        <AddToCart/>
+        </PrivateRoute>}
     ]
 }
 ])

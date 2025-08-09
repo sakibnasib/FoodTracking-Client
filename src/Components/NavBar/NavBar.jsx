@@ -2,7 +2,7 @@ import { Link,NavLink } from 'react-router';
 
 import { Tooltip } from "react-tooltip";
 import useAuth from '../../hook/useAuth';
-// import Loading from '../Loading/Loading';
+import { FaCartArrowDown } from "react-icons/fa";
 const Navbar = () => {
   const {user,logOut,loading}=useAuth();
   
@@ -62,7 +62,7 @@ const Navbar = () => {
               }>About</NavLink></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">🥗SafeBite</a>
+    <a className="btn btn-ghost text-xl">🥗FoodTracking</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -109,7 +109,9 @@ const Navbar = () => {
   </div>
   <div className="navbar-end">
      {user? <>
+     <Link to='/addtocart' className='pr-2'><FaCartArrowDown size={25} /></Link>
      <div className="dropdown dropdown-end">
+      
               <div
                 tabIndex={0}
                 role="button"

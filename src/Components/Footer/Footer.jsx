@@ -9,7 +9,7 @@ const Footer = () => {
 
         {/* Brand Description */}
         <div>
-          <h2 className="text-3xl font-bold mb-4 tracking-wide">🥗 SafeBite</h2>
+          <h2 className="text-3xl font-bold mb-4 tracking-wide">🥗FoodTracking</h2>
           <p className="text-gray-300 text-sm leading-relaxed">
             Track your food expiry dates effortlessly. SafeBite helps you reduce waste and save money. Eat smart. Live sustainably.
           </p>
