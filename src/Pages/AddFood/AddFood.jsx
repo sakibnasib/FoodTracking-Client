@@ -11,14 +11,14 @@ import {
 } from "react-icons/fa";
 import { FcVoicemail } from "react-icons/fc";
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router";
+// import { useNavigate } from "react-router";
 import useAuth from "../../hook/useAuth";
 import { imageUpload } from "../../api/utils";
 import useAxiosSecure from "../../ApiHook/axiosInstance";
 
 const AddFood = () => {
   const { user } = useAuth();
-  const navigate = useNavigate();
+//   const navigate = useNavigate();
 const axiosSecure=useAxiosSecure()
   const [imagePreview, setImagePreview] = useState(null);
   const [uploading, setUploading] = useState(false);
@@ -78,10 +78,10 @@ const axiosSecure=useAxiosSecure()
           timer: 1500,
         });
 
-        form.reset();
+        // form.reset();
         setImagePreview(null);
         setUploadSuccess(false);
-        navigate("/myAddFood"); 
+        // navigate("/myAddFood"); 
       }
     } catch (error) {
       console.error(error);
