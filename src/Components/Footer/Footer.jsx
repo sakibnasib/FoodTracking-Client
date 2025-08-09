@@ -4,7 +4,7 @@ import { FaInstagram } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
-    <footer className="bg-dill text-charcoal px-6 py-12 backdrop-blur-md shadow-inner">
+    <footer className="bg-[#8DAA91]  text-charcoal px-6 py-12 backdrop-blur-md shadow-inner">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
 
         {/* Brand Description */}
@@ -22,9 +22,7 @@ const Footer = () => {
             {[
               { path: '/', label: 'Home' },
               { path: '/allfood', label: 'AllFood' },
-              { path: '/addfood', label: 'Add Food' },
               { path: '/contactUs', label: 'ContactUs' },
-              { path: '/myitams', label: 'My Items' },
               { path: '/about', label: 'About' },
             ].map(({ path, label }) => (
               <li key={path}>

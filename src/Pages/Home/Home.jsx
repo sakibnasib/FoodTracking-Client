@@ -9,6 +9,7 @@ import axios from 'axios';
 import Heading from '../../Components/Heading/Heading';
 import SkeletonCard from '../../Components/Skeleton/SkeletonCard';
 import FoodsCard from '../../Components/FoodsCard/FoodsCard';
+import SmartSuggestions from '../../Components/Home/SmartSuggestions';
 
 const Home = () => {
      const [data, setData] = useState([]);
@@ -44,12 +45,13 @@ const Home = () => {
                 ))}
           </div>
         </div>
-        <DonationInfo/>
            <AllExpiry/>
-             
-           <PreservationTips/>
+            <QuickRecipes/>
            <Faqs/>
-          <QuickRecipes/>
+             <PreservationTips/>
+             <SmartSuggestions/>
+           <DonationInfo/>
+         
            </div>
            
         </div>
