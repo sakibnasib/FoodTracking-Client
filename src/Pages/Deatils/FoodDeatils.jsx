@@ -511,7 +511,7 @@ try {
                 </div>
 
                 {/* Enhanced Add to Cart Button */}
-                <div className="flex justify-center items-center pt-4">
+                {!timeRemaining.expired &&  <div className="flex justify-center items-center pt-4">
                   <button
                     onClick={() => haqndleAddToCart(data)}
                     className="group relative px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white rounded-2xl text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:from-green-600 hover:to-emerald-700 focus:outline-none focus:ring-4 focus:ring-green-300"
@@ -525,8 +525,9 @@ try {
                     <div className="absolute inset-0 bg-white/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   </button>
                 </div>
-              </div>
-
+              }
+               
+</div>
               {/* Enhanced Sidebar Info */}
               <div className="space-y-8">
                 {/* Enhanced Quick Info Cards */}

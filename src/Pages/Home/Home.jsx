@@ -32,7 +32,7 @@ const Home = () => {
     return (
         <div>
            <Banner/>
-           <div className="w-11/12 mx-auto">
+           <div className="">
            <div className=" mt-10">
           <Heading text={"NearlyExpiryFoods"}></Heading>
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-6 ">
