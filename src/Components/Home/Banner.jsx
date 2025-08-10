@@ -72,7 +72,7 @@ import "swiper/css/pagination";
 const slides = [
   {
     id: 1,
-    image: "https://i.ibb.co.com/TMydPtp3/57664.jpg",
+    image: "https://i.ibb.co.com/0j0bks6q/batch-cooking-arrangement-with-copy-space.jpg",
     title: "Fresh Picks, Before They're Gone!",
     description: "Discover the freshest ingredients delivered to your doorstep",
     cta: "Shop Now",
@@ -80,7 +80,7 @@ const slides = [
   },
   {
     id: 2,
-    image: "https://i.ibb.co.com/p6cT1cnn/bright-vegetables-cut-chicken-plate.jpg",
+    image: "https://i.ibb.co.com/fdzpfrkG/tasty-batch-food-cooked-with-empty-notebook.jpg",
     title: "Track What's Fresh — and What's Not",
     description: "Smart expiry tracking to keep your kitchen organized",
     cta: "Learn More",
@@ -88,7 +88,7 @@ const slides = [
   },
   {
     id: 3,
-    image: "https://i.ibb.co.com/0j0bks6q/batch-cooking-arrangement-with-copy-space.jpg",
+    image: "https://i.ibb.co.com/nMfwsgvJ/flat-lay-vegetables-arrangement-dark-background-with-copy-space.jpg",
     title: "Stay Ahead of Expiry Dates",
     description: "Never waste food again with our intelligent reminder system",
     cta: "Get Started",
@@ -126,7 +126,7 @@ const Banner = () => {
               <img
                 src={slide.image}
                 alt={slide.title}
-                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                className="w-full h-full object-fit transition-transform duration-700 hover:scale-105"
               />
               
               {/* Gradient Overlay */}

@@ -16,7 +16,7 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const [dataLength, setDataLength] = useState(0);
   useEffect(() => {
-    axios("http://localhost:3000/nearexpiring").then(
+    axios("https://server-indol-nu.vercel.app/nearexpiring").then(
       (res) => {
         setData(res.data);
         setLoading(false);
@@ -33,9 +33,13 @@ const Home = () => {
         <div>
            <Banner/>
            <div className="">
-           <div className=" mt-10">
-          <Heading text={"NearlyExpiryFoods"}></Heading>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-6 ">
+           <div className=" mt-10 relative">
+              {/* Background Pattern */}
+      
+          
+              <Heading text={"NearlyExpiryFoods"}></Heading>
+          
+          <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-6 ">
             {loading
               ? [...Array(dataLength || 8)].map((_, idx) => (
                   <SkeletonCard key={idx} />
@@ -47,11 +51,10 @@ const Home = () => {
         </div>
            <AllExpiry/>
             <QuickRecipes/>
-           <Faqs/>
-             <PreservationTips/>
              <SmartSuggestions/>
-           <DonationInfo/>
-         
+           <PreservationTips/>
+            <DonationInfo/>
+         <Faqs/>
            </div>
            
         </div>

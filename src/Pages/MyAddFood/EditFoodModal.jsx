@@ -103,7 +103,7 @@ const EditFoodModal = ({ isOpen, onClose, foodItem }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50 bg-black/50 backdrop-blur-sm">
-      <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-4xl w-full mx-4 max-h-[90vh] overflow-y-auto relative">
+      <div className="bg-white rounded-3xl shadow-2xl p-8 max-w-4xl w-full mx-4 max-h-[100vh] overflow-y-auto relative">
         {/* Background Pattern */}
         <div className="absolute inset-0 bg-gradient-to-br from-green-50 via-white to-blue-50 rounded-3xl opacity-50"></div>
         <div className="absolute top-4 right-4 w-32 h-32 bg-green-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>

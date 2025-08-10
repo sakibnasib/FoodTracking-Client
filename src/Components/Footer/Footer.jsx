@@ -1,6 +1,6 @@
 import { Link } from 'react-router';
 import { FaFacebookF, FaGithub, FaInstagram, FaHeart, FaLeaf, FaShieldAlt, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
-
+import logo from '../../../public/logo.png'
 const Footer = () => {
   return (
     <footer className="relative overflow-hidden">
@@ -18,10 +18,11 @@ const Footer = () => {
             {/* Brand Description */}
             <div className="group">
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-r from-green-400 to-blue-500 rounded-xl flex items-center justify-center text-white shadow-lg">
-                  <FaLeaf className="text-2xl" />
+                <div className="w-13 h-13  rounded-xl flex items-center justify-center text-white shadow-lg">
+                  {/* <FaLeaf className="text-2xl" /> */}
+                  <img src={logo} alt="" />
                 </div>
-                <h2 className="text-3xl font-bold text-white tracking-wide">🥗FoodTracking</h2>
+                <h2 className="text-3xl font-bold text-white tracking-wide">FoodTracking</h2>
               </div>
               <p className="text-gray-300 text-sm leading-relaxed mb-6">
                 Track your food expiry dates effortlessly. SafeBite helps you reduce waste and save money. Eat smart. Live sustainably.
@@ -31,7 +32,7 @@ const Footer = () => {
               <div className="space-y-3">
                 <div className="flex items-center gap-3 text-gray-300 text-sm">
                   <FaEnvelope className="text-green-400" />
-                  <span>contact@safebite.com</span>
+                  <span>contact@FoodTracking.com</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-300 text-sm">
                   <FaPhone className="text-green-400" />
@@ -157,7 +158,7 @@ const Footer = () => {
           <div className="mt-8 flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <p className="text-gray-400 text-sm">
-                &copy; {new Date().getFullYear()} <span className="font-semibold text-white">SafeBite</span>. All rights reserved.
+                &copy; {new Date().getFullYear()} <span className="font-semibold text-white">FoodTracking</span>. All rights reserved.
               </p>
             </div>
             

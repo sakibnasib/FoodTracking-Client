@@ -140,13 +140,18 @@ const AddFood = () => {
                       </label>
                       <div className="relative">
                         <div className="border-2 border-dashed border-gray-300 rounded-2xl p-8 text-center hover:border-blue-400 transition-all duration-300 bg-gray-50 hover:bg-blue-50">
-                          <input
-                            className="hidden"
-                            type="file"
-                            name="image"
-                            accept="image/*"
-                            onChange={handleImageChange}
-                            required
+                          {/* <input
+                            // className="hidden"
+                            // type="file" name="image" accept="image/*"
+                            // onChange={handleImageChange}
+                            // require
+
+                              type="file"
+    name="image"
+    accept="image/*"
+    onChange={handleImageChange}
+    required
+    className="hidden"
                           />
                           <label className="cursor-pointer">
                             <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
@@ -154,7 +159,23 @@ const AddFood = () => {
                             </div>
                             <p className="text-lg font-semibold text-gray-700 mb-2">Upload Food Image</p>
                             <p className="text-sm text-gray-500">Click to select an image file</p>
-                          </label>
+                          </label> */}
+                          <label className="cursor-pointer">
+  <input
+    type="file"
+    name="image"
+    accept="image/*"
+    onChange={handleImageChange}
+    required
+    className="hidden"
+  />
+  <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300">
+    <FaUpload className="text-2xl text-white" />
+  </div>
+  <p className="text-lg font-semibold text-gray-700 mb-2">Upload Food Image</p>
+  <p className="text-sm text-gray-500">Click to select an image file</p>
+</label>
+
                         </div>
                         
                         {imagePreview && (

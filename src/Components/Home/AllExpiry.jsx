@@ -15,7 +15,7 @@ const AllExpiry = () => {
   const [showAll, setShowAll] = useState(false); // for toggling show more/less
 
   useEffect(() => {
-    axios('http://localhost:3000/allfoods/expired')
+    axios('https://server-indol-nu.vercel.app/allfoods/expired')
       .then(res => {
         setExData(res.data);
         // setCount(res.data);
@@ -35,14 +35,14 @@ const AllExpiry = () => {
      <Heading text={"All Expiry Foods"}/>
 
       {loading ? (
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-5">
+        <div className=" grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-5">
           {[...Array(8)].map((_, idx) => (
             <SkeletonCard key={idx} />
           ))}
         </div>
       ) : (
         <>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-5">
+          <div className="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-5">
             {exData.slice(0, cardsToShow).map(food => (
               <FoodsCard key={food._id} food={food} />
             ))}

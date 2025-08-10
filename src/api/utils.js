@@ -14,6 +14,6 @@ export const imageUpload=async imageData =>{
 
 // save or update user in db
 export const saveUserDB= async user =>{
-  const {data}=await axios.post(`http://localhost:3000/user`,user)
+  const {data}=await axios.post(`https://server-indol-nu.vercel.app/user`,user)
   return data;
 }

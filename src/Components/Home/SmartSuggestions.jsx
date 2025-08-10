@@ -11,7 +11,7 @@ const SmartSuggestions = () => {
 
   useEffect(() => {
     setLoading(true);
-    axios.get('http://localhost:3000/foods')
+    axios.get('https://server-indol-nu.vercel.app/foods')
       .then(res => {
         console.log(res)
         setFoods(res.data || res.data);
@@ -49,7 +49,7 @@ const SmartSuggestions = () => {
   };
 
   return (
-    <section className="py-16 px-4 md:px-12 relative overflow-hidden">
+    <section className="py-16 mt-10 px-4 md:px-12 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-green-50 via-white to-blue-50"></div>
       <div className="absolute top-0 left-0 w-72 h-72 bg-green-200 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>

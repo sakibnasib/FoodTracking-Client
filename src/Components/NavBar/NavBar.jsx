@@ -1,6 +1,7 @@
 import { Link, NavLink } from 'react-router';
 import { Tooltip } from "react-tooltip";
 import useAuth from '../../hook/useAuth';
+import logo from '../../../public/logo.png'
 import { FaCartArrowDown, FaHome, FaUtensils, FaPlus, FaList, FaInfoCircle, FaPhone, FaUser, FaSignOutAlt, FaSignInAlt, FaUserPlus } from 'react-icons/fa';
 
 const Navbar = () => {
@@ -38,7 +39,7 @@ const Navbar = () => {
             <div className="flex-shrink-0">
               <Link to="/" className="flex items-center gap-3 group">
                 <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-2xl">🥗</span>
+                  <span className="text-2xl"><img src={logo} alt="" /></span>
                 </div>
                 <span className="text-2xl font-bold text-white group-hover:text-green-200 transition-colors duration-300">
                   FoodTracking

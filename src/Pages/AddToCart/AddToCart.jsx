@@ -1,38 +1,3 @@
-// import React, { useEffect, useState } from 'react';
-// import useAxiosSecure from '../../ApiHook/axiosInstance';
-// import useAuth from '../../hook/useAuth';
-
-// const AddToCart = () => {
-//      const { user } = useAuth();
-//   const axiosSecure = useAxiosSecure();
-
-//   const [loading, setLoading] = useState(true);
-//   const [mydata, setMydata] = useState([]);
-//   const [page, setPage] = useState(1);
-//   const [totalPages, setTotalPages] = useState(1);
-//   const limit = 10;
-
-//   useEffect(() => {
-//     if (!user?.email) return;
-
-//     setLoading(true);
-//     axiosSecure
-//       .get(`/foods/user/${user.email}?page=${page}&limit=${limit}`)
-//       .then((res) => {
-//         setMydata(res.data.items || []);
-//         setTotalPages(Math.ceil(res.data.total / limit) || 1);
-//         setLoading(false);
-//       })
-//       .catch(() => setLoading(false));
-//   }, [user, page, axiosSecure]);
-//     return (
-//         <div>
-            
-//         </div>
-//     );
-// };
-
-// export default AddToCart;
 import React, { useEffect, useState } from 'react';
 import useAxiosSecure from '../../ApiHook/axiosInstance';
 import useAuth from '../../hook/useAuth';

@@ -27,7 +27,7 @@ const AllFood = () => {
     if (sortBy) params.sort = sortBy;
 
     try {
-      const res = await axios.get('http://localhost:3000/all-foods', { params });
+      const res = await axios.get('https://server-indol-nu.vercel.app/all-foods', { params });
       const data = res.data.data || res.data;
       const totalCount = res.data.total || data.length;
 

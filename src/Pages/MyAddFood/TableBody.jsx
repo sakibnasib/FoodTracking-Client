@@ -3,7 +3,7 @@ import EditFoodModal from "./EditFoodModal"
 import Swal from 'sweetalert2';
 import useAuth from '../../hook/useAuth';
 import useAxiosSecure from '../../ApiHook/axiosInstance';
-import { FaEdit, FaTrash, FaEye, FaUtensils, FaCalendarAlt, FaWeight } from 'react-icons/fa';
+import { FaEdit, FaTrash,  FaUtensils, FaCalendarAlt, FaWeight } from 'react-icons/fa';
 
 const TableBody = ({data, mydata, setMydata}) => {
   const { user } = useAuth();
@@ -64,7 +64,7 @@ const TableBody = ({data, mydata, setMydata}) => {
   return (
     <>
       <tr 
-        className="group hover:bg-gradient-to-r hover:from-green-50 hover:to-blue-50 transition-all duration-300 border-b border-gray-100"
+        className=" hover:bg-gradient-to-r hover:from-green-50 hover:to-blue-50 transition-all duration-300 border-b border-gray-100"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         style={{ animationDelay: `${Math.random() * 500}ms` }}
@@ -131,9 +131,9 @@ const TableBody = ({data, mydata, setMydata}) => {
         <td className="px-6 py-6">
           <div className="flex items-center gap-2">
             {/* View Button */}
-            <button className="group/btn p-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-all duration-300 transform hover:scale-110 shadow-sm hover:shadow-md">
+            {/* <button className="group/btn p-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-all duration-300 transform hover:scale-110 shadow-sm hover:shadow-md">
               <FaEye className="text-sm group-hover/btn:scale-110 transition-transform duration-300" />
-            </button>
+            </button> */}
 
             {/* Edit Button */}
             <button 

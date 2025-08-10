@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
         </PrivateRoute>},
          {
       path:'/food/:id',
-      loader:  ({params})=>axios(`http://localhost:3000/food/${params.id}`),
+      loader:  ({params})=>axios(`https://server-indol-nu.vercel.app/food/${params.id}`),
       element:<FoodDetails></FoodDetails>
     },
     {path:'addtocart',element:<PrivateRoute>

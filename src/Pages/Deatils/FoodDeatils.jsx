@@ -485,7 +485,7 @@ try {
                     </div>
                   ) : (
                     <div className="text-center">
-                      <div className="grid grid-cols-4 gap-6 mb-8">
+                      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 mb-8">
                         <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 border border-blue-100">
                           <div className="text-4xl font-bold text-blue-600 mb-2">{timeRemaining.days}</div>
                           <div className="text-sm text-gray-500 font-medium">Days</div>
