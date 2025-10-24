@@ -23,7 +23,9 @@ export const router = createBrowserRouter([
         {path:'contactUs',Component:ContactUs},
         {path:'login',Component:Login},
         {path:'register',Component:Register},
-        {path:'addfood',Component:AddFood},
+        {path:'addfood',element: <PrivateRoute>
+<AddFood/>
+        </PrivateRoute> },
         {path:'myaddfood',element:<PrivateRoute>
             <MyAddFood/>
         </PrivateRoute>},

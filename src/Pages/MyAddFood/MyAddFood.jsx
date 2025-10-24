@@ -4,6 +4,7 @@ import SkeletonTableRow from '../../Components/Skeleton/SkeletonTableRow';
 import useAxiosSecure from '../../ApiHook/axiosInstance';
 import useAuth from '../../hook/useAuth';
 import { FaUtensils, FaUser, FaList, FaArrowLeft, FaArrowRight, FaPlus, FaChartBar, FaClock } from 'react-icons/fa';
+import { Link } from 'react-router';
 
 const MyAddFood = () => {
   const { user } = useAuth();
@@ -170,10 +171,10 @@ const MyAddFood = () => {
                               <h3 className="text-lg font-semibold text-gray-800 mb-2">No Food Items Found</h3>
                               <p className="text-gray-600">Start by adding your first food item to your inventory.</p>
                             </div>
-                            <button className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-500 to-blue-500 text-white rounded-full font-semibold hover:from-green-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                            <Link to='/addfood' className="mt-4 inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-500 to-blue-500 text-white rounded-full font-semibold hover:from-green-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 shadow-lg">
                               <FaPlus className="text-sm" />
                               Add Food Item
-                            </button>
+                            </Link>
                           </div>
                         </td>
                       </tr>
